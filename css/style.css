@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: red;
+}
+
+a {
+    color: white;
+}
+
+#welcome {
+    background-image: url("../images/sluchawki.png");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Pacifico, open-sans;
+}
+
+header {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.menu {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 50px 13px 0 50px;
+}
+
+#panel {
+    float: right;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-right: -50px;
+    width: 100px;
+    color: white;
+}
+
+.login .pass {
+    display: inline-block;
+}
+
+.check {
+    display: inline-block;
+    float: none;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.submit {
+    width: 70px;
+    padding: 5px 13px;
+    border: 1px solid #404040;
+    color: white;
+    background: #404040;
+    position: relative;
+}
+
+#head {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    margin: 0 auto;
+    height: 280px;
+}
+
+#head h1 {
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+#container {
+    display: inline-block;
+    width: 1024px;
+    height: 500px;
+
+}
+
+.gif {
+    background-image: url("../images/giphy.gif");
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-left: -510px;
+}
+
+.black {
+    box-sizing: border-box;
+    width: 860px;
+    margin-right: -180px;
+    height: 480px;
+    float: right;
+    background-color: #404040;
+}
+
+.li2 {
+    margin-top: 20px;
+    padding: 10px 13px 20px 50px;
+    margin-bottom: 100px;
+    color: #ffffff;
+    display: block;
+}
+
+#moviesec {
+    height: 500px;
+    width: 1024px;
+}
+
+video {
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    float: right;
+}
+
+.another {
+    margin-top: 50px;
+    margin-left: -150px;
+    box-sizing: border-box;
+    width: 500px;
+    color: black;
+    float: left;
+    font-family: Pacifico, sans-serif;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #000000;
+    height: 150px;
+    color: #ffffff;
+}
+
+.menu_end {
+    font-family: Times, sans-serif;
+}
+
+.menu_end ul>a {
+    display: inline-block;
+    padding: 50px 15px 15px 50px;
+}
+
+.copy {
+    float: right;
+    margin-right: 200px;
+    font-style: italic;
+}

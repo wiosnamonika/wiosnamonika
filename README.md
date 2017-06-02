@@ -1,2 +1,1 @@
-# wiosnamonika
-For own projects
+# first www project
