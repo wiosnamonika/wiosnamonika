@@ -40,4 +40,48 @@ document.addEventListener('DOMContentLoaded', function(){
         allLi[numbers].classList.add('visible');
     })
     
+    
+        var form = document.querySelector('form');
+
+
+    var emailElem = form.elements.email; 
+    var nameElem = form.elements.name;
+
+
+    var errorMsg = form.querySelector('.error-message');
+    var successMsg = form.querySelector('.success-message');
+
+    form.addEventListener('submit', function (event) { //form ZAWSZE JEST NA SUBMIT nie na clicku!!
+        event.preventDefault();
+        var errorText = '';
+        //teraz sprawdzamy czy jest jakas klasa w css prygotowana.dopisujemy recznie klase box error
+        //        //klasa dodana po to ze jak niespelni kryteriow to pojawi sie pole na czerwone
+
+
+        if (nameElem.value.trim().length <= 6) {
+            nameElem.classList.add('box-error');
+            errorText += 'Twoje imię i nazwisko jest za krótkie<br>';
+        } else {
+            nameElem.classList.remove('box-error');
+        }
+        
+        if (emailElem.value.indexOf('@') == -1) {
+            emailElem.classList.add('box-error');
+            errorText += 'Email musi posiadać znak @<br>';
+        } else {
+            emailElem.classList.remove('box-error'); //zabezpieczenie 
+        }
+
+
+        errorMsg.innerHTML = errorText;
+        //innerHTML bo chcemy zeby pola byly w kolejnych linijkach
+        if (errorMsg.innerHTML.trim().length == 0) {
+            successMsg.innerText = 'Wiadomość wysłano';
+            form.submit();
+
+        }
+    });
+    
+    
+    
 }) //koniec funkcji
