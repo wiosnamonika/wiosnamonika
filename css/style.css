@@ -175,6 +175,7 @@ ul.gallery {
     height: 48.8vw;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .fullScreen {
