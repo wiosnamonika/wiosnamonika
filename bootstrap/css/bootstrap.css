@@ -1,0 +1,17 @@
+.slider{
+    width: 100%;
+    height:500px;
+}
+
+
+    
+.thumbnail{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.btn btn-primary{
+    display: flex;
+    flex-direction: row;
+}
