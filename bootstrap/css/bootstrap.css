@@ -11,3 +11,21 @@
     
 }
 
+#menu {
+    background-color: black;
+   
+}
+
+#menu a{
+    
+    color: #ffffff;
+}
+
+.navbar-form .form-control {
+    margin-top: -120px;
+    
+}
+
+.btn-default{
+    margin-top: -120px;
+}
