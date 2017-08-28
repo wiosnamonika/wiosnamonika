@@ -76,3 +76,29 @@ hr{
     padding-top: 20px;
     
 }
+
+.dealer{
+    color: #36454f;
+    text-transform: capitalize;
+}
+
+#about {
+    height: 400px;
+    font-size: 25px;
+}
+
+.start {
+    
+    padding: 15px 30px;
+    border-radius: 300px;
+    border: 2px solid orange;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 30vw;
+    
+}
+
