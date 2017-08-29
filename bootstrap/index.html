@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+    
+    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -13,7 +22,29 @@
 
 </head>
 
-<body>
+    <body>
+    
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=IzaSyBJZbiDVQr5xoPDEjTBA14s5rFTDwuvJEA&callback=initMap">
+    </script>
+      
+    
+    
 
     <div class='bs-docs-section'>
         <h1 class='page-header' id='carousel'></h1>
@@ -180,6 +211,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        
+        
+        
+        
+        
     </footer>
 
 

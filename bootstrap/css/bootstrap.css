@@ -101,8 +101,11 @@ hr{
     margin-left: 30vw;
 }
     
-    footer{
-        
+    footer form{
+        width: 25%;
+        display: inline-block;
+        float: right;
+        margin-right: 50px;
     }
 }
 
