@@ -3,14 +3,15 @@
 
 <head>
     <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
     </style>
-    
-    
-    
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -18,33 +19,19 @@
 
     <link rel='stylesheet' href='css/bootstrap.min.css'>
     <link rel='stylesheet' href='css/bootstrap.css'>
+     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Bootstrap project</title>
 
 </head>
 
-    <body>
-    
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=IzaSyBJZbiDVQr5xoPDEjTBA14s5rFTDwuvJEA&callback=initMap">
-    </script>
-      
-    
-    
+<body>
+
+
+
+
+
 
     <div class='bs-docs-section'>
         <h1 class='page-header' id='carousel'></h1>
@@ -89,9 +76,9 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <div class="carousel-caption d-none d-md-block">
-            <h1 class='dealer'>Choose your best tyre dealer!</h1>
-    
-  </div>
+                    <h1 class='dealer'>Choose your best tyre dealer!</h1>
+
+                </div>
                 <img class='slider' src="images/Porsche-Mission.jpg" alt="porshe">
                 <div class="carousel-caption">
 
@@ -156,6 +143,7 @@
 
     <div class="row">
         <div class="col-sm-6 col-md-4">
+
             <div class="thumbnail">
                 <img src="images/tyre3.jpg" alt="wheel">
                 <div class="caption">
@@ -185,13 +173,72 @@
 
     <section class='container'>
         <h2 class='explore'>Explore our services</h2>
-
+        <div class="service-box">
+            <div class="service-container">
+                <div class="singleservice">
+                    <img class="serviceicon" src="http://www.procar-serwis.pl/images/wulkanizacja/wulkanizacja_01.jpg">
+                    <h2 class="servicetitle">
+                        Car tools
+                    </h2>
+                    E-book or print, my goal is to make a captivating image that is true to your novel.
+                </div>
+                <div class="singleserviceb">
+                    <img class="serviceicon" src="http://techno.com.my/online/images/g-scan.jpg">
+                    <h2 class="servicetitle">
+                        Car service
+                    </h2>
+                    From app icons to illustrations, look sharp with scalable, crisp, and lively graphics.
+                </div>
+                <div class="singleservice">
+                    <img class="serviceicon" src="https://ae01.alicdn.com/kf/HTB1qzNiIXXXXXXwXVXXq6xXFXXXC/-font-b-RC-b-font-font-b-Tools-b-font-HSP-4pcs-PHILIPS-Screwdriver-font.jpg">
+                    <h2 class="servicetitle">
+                        Tyres
+                    </h2>
+                    Logos, business cards, signage, or social media, let's build an adventure.
+                </div>
+                <div class="singleserviceb">
+                    <img class="serviceicon" src="https://ae01.alicdn.com/kf/HTB14SfmMVXXXXXBXpXXq6xXFXXXF/diesel-truck-diagnostic-scanner-diagnostic-font-b-tool-b-font-nexiq-125032-usb-link-all-cables.jpg">
+                    <h2 class="servicetitle">
+                        Car wash
+                    </h2>
+                    E-book or print, my goal is to make a captivating image that is true to your novel.
+                </div>
+                <div class="singleservice">
+                    <img class="serviceicon" src="http://www.web2carz.com/images/articles/201511/automotive_tools_1447276050_800x600.jpg">
+                    <h2 class="servicetitle">
+                        Car Design
+                    </h2>
+                    From app icons to illustrations, look sharp with scalable, crisp, and lively graphics.
+                </div>
+                <div class="singleserviceb">
+                    <img class="serviceicon" src="http://www.evilempireperformance.co.uk/gto-3000gt-shop/images/Car%20Current%20Tester.jpg">
+                    <h2 class="servicetitle">
+                        MOTION DESIGN
+                    </h2>
+                    Logos, business cards, signage, or social media, let's build an adventure.
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
 
     <footer>
+<!--
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">
+                Let's get in touch!
+            </h2>
+
+            <p>Chocolate cake cotton candy <br>sesame snaps sweet ice <br>cream gummies tootsie roll<br> lollipop gummies.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 ml-auto text-center">
+                <i class="fa fa-phone fa-3x sr-contact" data-sr-id="8" />
+            </div>
+            <p>123-456-6789</p>
+        </div>
 
         <form>
             <div class="form-group">
@@ -211,12 +258,83 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+-->
+
+        
+        <section id="contact">
+			<div class="section-content">
+				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+				<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+			</div>
+			<div class="contact-section">
+			<div class="container">
+				<form>
+					<div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				<label for="exampleInputUsername">Your name</label>
+					    	<input type="text" class="form-control" id="" placeholder=" Enter Name">
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="exampleInputEmail">Email Address</label>
+					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+					  	</div>	
+					  	<div class="form-group">
+					    	<label for="telephone">Mobile No.</label>
+					    	<input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+			  			</div>
+			  		</div>
+			  		<div class="col-md-6">
+			  			<div class="form-group">
+			  				<label for ="description"> Message</label>
+			  			 	<textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+			  			</div>
+			  			<div>
+
+			  				<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  			</div>
+			  			
+					</div>
+				</form>
+			</div>
+            </div>
+        </section>
         
         
         
         
-        
+        <!--google map-->
+
+
+
+        <div id="map">
+            <p class='googlemap'>Check our locations </p>
+        </div>
+
+        <script>
+            function initMap() {
+                var wroclaw = {
+                    lat: 51.107885,
+                    lng: 17.038538
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: wroclaw
+                });
+                var marker = new google.maps.Marker({
+                    position: wroclaw,
+                    map: map
+                });
+            }
+
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV3Op6xXmbi1-LqUXnBFWIa5-x3_2F48Y&callback=initMap">
+
+
+        </script>
+
+
     </footer>
+
 
 
     <!-- jQuery library -->
