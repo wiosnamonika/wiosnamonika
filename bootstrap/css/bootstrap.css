@@ -1,39 +1,31 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     vertical-align: baseline;
-    
 }
 
-.slider{
+.slider {
     width: 100%;
-    height:500px;
+    height: 500px;
 }
 
-
-    
-.thumbnail{
+.thumbnail {
     display: flex;
     flex-direction: row;
-    
 }
 
 #menu {
     background-color: black;
-   
 }
 
-#menu a{
-    
+#menu a {
     color: #ffffff;
 }
 
 .navbar-form .form-control {
     margin-top: -130px;
     margin-right: 120px;
-    
 }
-
 
 .btn-default {
     display: inline-block;
@@ -42,122 +34,111 @@
     margin-top: -130px;
 }
 
-
-
-.row{
+.row {
     display: flex;
     align-self: stretch;
     margin-right: 50%;
-    
 }
 
-
-
-hr{
-    
+hr {
     max-width: 50px;
     border-width: 3px;
     margin-right: -32%;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: orange;
-    
 }
 
-.bg-primary h2, p {
+.bg-primary h2,
+p {
     margin-right: -150%;
 }
 
-.explore{
+.explore {
     display: flex;
     justify-content: center;
     text-transform: capitalize;
     padding-top: 20px;
-    
 }
 
-
-
-
 .services-wrapper {
-  width: auto;
-  min-height: 400px;
-  padding: 25px;
+    width: auto;
+    min-height: 400px;
+    padding: 25px;
 }
 
 .service-container {
-  text-align: center;
-  margin-top: 25px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .singleservice {
-  display: inline-block;
-  width: 25%;
-  height: 100%;
-  background-color: #f3f3f3;
-  padding: 25px;
-  color: #b2b2b2;
-  font-family: avenir;
-  text-align: left;
-  margin-bottom: 15px;
-  padding: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-bottom: 5px solid skyblue;
-  border-radius: 10px;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background-color: #f3f3f3;
+    padding: 25px;
+    color: #b2b2b2;
+    font-family: avenir;
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 5px solid skyblue;
+    border-radius: 10px;
 }
 
 .singleserviceb {
-  display: inline-block;
-  width: 25%;
-  height: 100%;
-  background-color: #f3f3f3;
-  padding: 25px;
-  color: #b2b2b2;
-  font-family: avenir;
-  text-align: left;
-  margin-bottom: 15px;
-  padding: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-bottom: 5px solid orange;
-  border-radius: 10px;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background-color: #f3f3f3;
+    padding: 25px;
+    color: #b2b2b2;
+    font-family: avenir;
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 5px solid orange;
+    border-radius: 10px;
 }
 
 @media (max-width:500px) {
-  .singleservice, .singleserviceb {
-    width: 100%;
-  }
+    .singleservice,
+    .singleserviceb {
+        width: 100%;
+    }
 }
 
-h2.servicetitle{
-  font-family: century gothic;
-  font-size: 16pt;
-  font-weight: normal;
-  letter-spacing: 1px;
-  padding-bottom: 0px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #8c8c8c;
+h2.servicetitle {
+    font-family: century gothic;
+    font-size: 16pt;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8c8c8c;
 }
 
 img.serviceicon {
-  width: 20%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 15px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  opacity: .5;
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: .5;
 }
 
-
-
-
-.dealer{
+.dealer {
     color: #36454f;
     text-transform: capitalize;
 }
@@ -168,19 +149,19 @@ img.serviceicon {
 }
 
 .start {
-    
     padding: 15px 30px;
     border-radius: 300px;
     border: 2px solid orange;
     background-color: #ffffff;
     color: #000000;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 600;
     font-size: 15px;
     margin-left: 30vw;
 }
-    
+
+
 /*
     footer form{
         width: 25%;
@@ -190,62 +171,70 @@ img.serviceicon {
     }
 */
 
+
 /*Contact sectiom*/
-.content-header{
-  font-family: 'Oleo Script', cursive;
-  color:#fcc500;
-  font-size: 45px;
+
+.content-header {
+    font-family: 'Oleo Script', cursive;
+    color: #fcc500;
+    font-size: 45px;
 }
 
-.section-content{
-  text-align: center; 
-
+.section-content {
+    text-align: center;
 }
-#contact{
-    
+
+#contact {
     font-family: 'Teko', sans-serif;
-  padding-top: 60px;
-  width: 100%;
-  width: 100vw;
-  height: 550px;
-  background: #3a6186; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color : #fff;    
-}
-.contact-section{
-  padding-top: 40px;
-}
-.contact-section .col-md-6{
-  width: 50%;
+    padding-top: 60px;
+    width: 100%;
+    width: 100vw;
+    height: 550px;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3a6186, #89253e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3a6186, #89253e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
 }
 
-.form-line{
-  border-right: 1px solid #B29999;
+.contact-section {
+    padding-top: 40px;
 }
 
-.form-group{
-  margin-top: 10px;
+.contact-section .col-md-6 {
+    width: 50%;
 }
-label{
-  font-size: 1.3em;
-  line-height: 1em;
-  font-weight: normal;
+
+.form-line {
+    border-right: 1px solid #B29999;
 }
-.form-control{
-  font-size: 1.3em;
-  color: #080808;
+
+.form-group {
+    margin-top: 10px;
 }
+
+label {
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+.form-control {
+    font-size: 1.3em;
+    color: #080808;
+}
+
 textarea.form-control {
     height: 135px;
-   /* margin-top: px;*/
+    /* margin-top: px;*/
 }
 
-.submit{
-  font-size: 1.1em;
-  float: right;
-  width: 150px;
-  background-color: transparent;
-  color: #fff;
-
+.submit {
+    font-size: 1.1em;
+    float: right;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
 }
