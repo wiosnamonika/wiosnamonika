@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
         #map {
             height: 400px;
             width: 100%;
         }
+
     </style>
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -18,17 +23,22 @@
     <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Bootstrap project</title>
+
 </head>
+
 <body>
+
+
     <div class='bs-docs-section'>
         <h1 class='page-header' id='carousel'></h1>
     </div>
+
+
     <nav class="breadcrumb" id='menu'>
         <a class="breadcrumb-item" href="#">Home</a>
         <a class="breadcrumb-item" href="#">Library</a>
         <a class="breadcrumb-item" href="#">Data</a>
         <span class="breadcrumb-item active">Info</span>
-        
         <!--navbar searchig menu-->
 
         <form class="navbar-form navbar-right" role="search">
@@ -37,6 +47,7 @@
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
+
     </nav>
 
     <!--slider-->
@@ -55,23 +66,28 @@
             <div class="item active">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class='dealer'>Choose your best tyre dealer!</h1>
+
                 </div>
                 <img class='slider' src="images/Porsche-Mission.jpg" alt="porshe">
                 <div class="carousel-caption">
+
                 </div>
             </div>
             <div class="item">
                 <img class='slider' src="images/porsche-normal%20(1).jpg" alt="porshe">
                 <div class="carousel-caption">
                 </div>
+
             </div>
+
             <div class="item">
                 <img class='slider' src="images/porsche-normal.jpg" alt="porshe">
                 <div class="carousel-caption">
+
+
                 </div>
-                
+
                 <!-- Controls -->
-                
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -84,6 +100,7 @@
         </div>
     </div>
 
+
     <!--we have everything you need-->
 
     <section class="bg-primary" id="about">
@@ -91,17 +108,25 @@
 
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading text-white">
-                        We've got what you need!
-                    </h2>
-                    <hr class="light" />
-                    <p class="text-faded">
-                        Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <div class='box'>
+                        <h2 class="section-heading text-white">
+                            We've got what you need!
+
+                            <hr class="light" />
+                        </h2>
+                        <p class="text-faded">
+                            Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor <br>incididunt ut labore<br>et dolore magna aliqua.
+                        </p>
+
+                    </div>
                 </div>
+
             </div>
-            <button class='start'>discover</button>
+            <div class='container'>
+                <button class='start'>discover</button>
+            </div>
         </div>
+
     </section>
 
     <!--chosing menu-->
@@ -123,12 +148,15 @@
                     <p>...</p>
                     <p><a href="#" class="btn btn-primary" role="button">Button</a> </p>
                 </div>
+
                 <img src="images/tyre6.jpg" alt="wheel">
                 <div class="caption">
                     <h3>Thumbnail label</h3>
                     <p>...</p>
                     <p><a href="#" class="btn btn-primary" role="button">Button</a> </p>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -182,11 +210,11 @@
             </div>
         </div>
     </section>
-    
-    <!--footer-->
-    
+
+
     <footer>
-       
+
+
         <section id="contact">
             <div class="section-content">
                 <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
@@ -215,16 +243,23 @@
                                 <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
                             </div>
                             <div>
-                                <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+
+                                <button type="button" class="btn btn-default submit" id='msg'><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
                             </div>
+
                         </div>
                     </form>
                 </div>
             </div>
         </section>
-        
+
+
+
+
         <!--google map-->
-        
+
+
+
         <div id="map">
             <p class='googlemap'>Check our locations </p>
         </div>
@@ -247,8 +282,14 @@
 
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV3Op6xXmbi1-LqUXnBFWIa5-x3_2F48Y&callback=initMap">
+
+
         </script>
+
+
     </footer>
+
+
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -257,5 +298,7 @@
     <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script src='js/bootstrap.min.js'></script>
     <script src='js/bootstrap.js'></script>
+
 </body>
+
 </html>
