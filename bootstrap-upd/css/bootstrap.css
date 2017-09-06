@@ -4,76 +4,107 @@
     vertical-align: baseline;
 }
 
-.navbar-form .form-control {
-    box-sizing: border-box;
-    margin-top: -41px;
-    /*    margin-right: 120px;*/
-}
-
-button.btn-default {
+.searchmenu {
     display: inline-block;
-    width: 70px;
-    position: relative;
-    margin-top: -28px;
     color: grey;
+    float: right;
 }
 
-/*
-@media (max-width:500px) {
-    .searchmenu {
-        display: block;
-    }
+.searchmenu .button.btn-default {
+    display: inline-block;
+    position: absolute;
 }
-*/
 
+.button.btn-default {
+    margin-top: -28px;
+}
 
+.searchmenu input.form-cntrol {
+    margin-top: -10px;
+    position: absolute;
+    background-color: red;
+}
 
 .slider {
     width: 100%;
     height: 500px;
 }
+
 .thumbnail {
     display: flex;
     flex-direction: row;
 }
+
 #menu {
     background-color: black;
 }
+
 #menu a {
     color: #ffffff;
 }
+
 .row {
     display: flex;
     align-self: stretch;
     margin-right: 50%;
 }
-hr {
+
+div.box{
+    box-sizing: border-box;
+    height: 250px;
+/*    width: 150px;*/
+}
+.box hr.light {
     max-width: 50px;
     border-width: 3px;
-    margin-right: -32%;
+
 }
+
+p.text-faded{
+    font-size: 15px;
+}
+
+.box .start {
+    padding: 15px 30px;
+    border-radius: 300px;
+    border: 2px solid orange;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 42%;
+  
+}
+
 .bg-primary {
     background-color: orange;
 }
+
 .bg-primary h2,
 p {
     margin-right: -150%;
 }
+
 .explore {
     display: flex;
     justify-content: center;
     text-transform: capitalize;
     padding-top: 20px;
 }
+
 .services-wrapper {
     width: auto;
     min-height: 400px;
     padding: 25px;
 }
+
 .service-container {
     text-align: center;
     margin-top: 25px;
 }
+
 .singleservice {
     display: inline-block;
     width: 25%;
@@ -90,6 +121,7 @@ p {
     border-bottom: 5px solid skyblue;
     border-radius: 10px;
 }
+
 .singleserviceb {
     display: inline-block;
     width: 25%;
@@ -105,12 +137,14 @@ p {
     margin-right: 5px;
     border-bottom: 5px solid orange;
 }
+
 @media (max-width:500px) {
     .singleservice,
     .singleserviceb {
         width: 100%;
     }
 }
+
 h2.servicetitle {
     font-family: century gothic;
     font-size: 16pt;
@@ -121,6 +155,7 @@ h2.servicetitle {
     text-transform: uppercase;
     color: #8c8c8c;
 }
+
 img.serviceicon {
     width: 60px;
     height: auto;
@@ -130,40 +165,34 @@ img.serviceicon {
     padding-bottom: 15px;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
-    
     filter: grayscale(100%);
     opacity: .5;
 }
+
 .dealer {
     color: #36454f;
     text-transform: capitalize;
 }
+
 #about {
     height: 400px;
     font-size: 25px;
 }
-.start {
-    padding: 15px 30px;
-    border-radius: 300px;
-    border: 2px solid orange;
-    background-color: #ffffff;
-    color: #000000;
-    text-transform: uppercase;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    margin-left: 455px;
-}
-<<<<<<< HEAD:bootstrap-upd/css/bootstrap.css=======>>>>>>>684867cbb7a8290de7f8e7ab646af7936dc4e3b2:bootstrap/css/bootstrap.css
+
+
+/*<<<<<<< HEAD:bootstrap-upd/css/bootstrap.css=======>>>>>>>684867cbb7a8290de7f8e7ab646af7936dc4e3b2:bootstrap/css/bootstrap.css*/
 /*Contact sectiom*/
+
 .content-header {
     font-family: 'Oleo Script', cursive;
     color: #fcc500;
     font-size: 45px;
 }
+
 .section-content {
     text-align: center;
 }
+
 #contact {
     font-family: 'Teko', sans-serif;
     padding-top: 60px;
@@ -172,40 +201,45 @@ img.serviceicon {
     height: 550px;
     background: #3a6186;
     /* fallback for old browsers */
-    
     background: -webkit-linear-gradient(to left, #3a6186, #89253e);
     /* Chrome 10-25, Safari 5.1-6 */
-    
     background: linear-gradient(to left, #3a6186, #89253e);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
     color: #fff;
 }
+
 .contact-section {
     padding-top: 40px;
 }
+
 .contact-section .col-md-6 {
     width: 50%;
 }
+
 .form-line {
     border-right: 1px solid #B29999;
 }
+
 .form-group {
     margin-top: 10px;
 }
+
 label {
     font-size: 1.3em;
     line-height: 1em;
     font-weight: normal;
 }
+
 .form-control {
     font-size: 1.3em;
     color: #080808;
 }
+
 textarea.form-control {
     height: 135px;
     /* margin-top: px;*/
 }
+
 .submit {
     font-size: 1.1em;
     float: right;
@@ -213,12 +247,19 @@ textarea.form-control {
     background-color: transparent;
     color: #fff;
 }
+
 .btn btn-default submit {
     background-color: aqua;
 }
+
 #msg {
     box-sizing: border-box;
     width: 100px;
     margin-top: 5px;
     background-color: #ffffff;
+    color: grey;
+}
+
+#msg:hover {
+    color: #000000;
 }
