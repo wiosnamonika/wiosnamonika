@@ -1,13 +1,7 @@
-//$('.carousel').carousel({
-//  setInterval: 3500;
-//})
-
 $(window).load(function () {
     var st;
-
     $('#carousel').on('slid.bs.carousel', function () {
         //   debugger;
-
         var newinterval = $('#carousel .carousel-inner').find('.active').attr('interval');
 
         $('#carousel').carousel("pause");
@@ -16,9 +10,6 @@ $(window).load(function () {
 
         // $('#carousel').carousel({ interval: newinterval });
     });
-
-
-
 
     $(document).ready(function () {
 
@@ -47,7 +38,4 @@ $(window).load(function () {
             }
         });
     });
-
-
-
 });
