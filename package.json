@@ -1,0 +1,26 @@
+{
+  "name": "boot",
+  "version": "3.0.7",
+  "description": "des",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiosnamonika/wiosnamonika.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiosnamonika/wiosnamonika.github.io/issues"
+  },
+  "homepage": "https://github.com/wiosnamonika/wiosnamonika.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp-sass": "^3.1.0"
+  }
+}
