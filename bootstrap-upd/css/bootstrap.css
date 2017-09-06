@@ -49,21 +49,20 @@
     margin-right: 50%;
 }
 
-div.box{
+div.box {
     box-sizing: border-box;
     height: 250px;
-/*    width: 150px;*/
+    /*    width: 150px;*/
 }
+
 .box hr.light {
     max-width: 50px;
     border-width: 3px;
-
 }
 
-p.text-faded{
+p.text-faded {
     font-size: 15px;
 }
-
 
 .box .start {
     padding: 15px 30px;
@@ -76,7 +75,40 @@ p.text-faded{
     font-weight: 600;
     font-size: 15px;
     margin-left: 42%;
-  
+}
+
+.start:hover {
+    background-color: orange;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
 }
 
 .bg-primary {
@@ -182,6 +214,8 @@ img.serviceicon {
 
 
 /*<<<<<<< HEAD:bootstrap-upd/css/bootstrap.css=======>>>>>>>684867cbb7a8290de7f8e7ab646af7936dc4e3b2:bootstrap/css/bootstrap.css*/
+
+
 /*Contact sectiom*/
 
 .content-header {
