@@ -1,6 +1,5 @@
-
 module.exports = {
-    entry: "./js/react.jsx",
+    entry: "./js/app.jsx",
     output: {
         
         filename: "./js/out.js"

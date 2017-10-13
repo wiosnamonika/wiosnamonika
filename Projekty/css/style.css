@@ -1,5 +1,39 @@
+
+#app {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: -50px;
+    margin-left: 25%;
+}
+
 header {
     width: 200vh;
     height: 50vw;
-    background-color: #000000;
+    background-image: url('../images/porshe.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+ul {
+    list-style: none;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.left{
+    margin-left:50px;
+}
+
+a {
+    color: #ffffff;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+ul.right {
+    float: right;
+    margin-right: 50px;
+}
+
+
