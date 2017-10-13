@@ -11,10 +11,15 @@
     margin-left: 35%;
 }
 
+.breadcrumb{
+    margin-top: -50px;
+}
 .searchmenu {
     display: inline-block;
     color: grey;
     float: right;
+    margin-top: -25px;
+    
 }
 
 .searchmenu .button.btn-default {
@@ -22,12 +27,9 @@
     position: absolute;
 }
 
-.button.btn-default {
-    margin-top: -28px;
-}
 
 .searchmenu input.form-cntrol {
-    margin-top: -10px;
+   
     position: absolute;
     background-color: red;
 }
@@ -290,7 +292,7 @@ textarea.form-control {
     color: #fff;
 }
 
-.btn btn-default submit {
+.btn btn-default  {
     background-color: aqua;
 }
 
