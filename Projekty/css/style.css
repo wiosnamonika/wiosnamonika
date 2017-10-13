@@ -2,7 +2,7 @@
 #app {
     color: #ffffff;
     font-size: 40px;
-    margin-top: -50px;
+    padding-top: 50px;
     margin-left: 25%;
 }
 
@@ -15,11 +15,11 @@ header {
 }
 
 ul {
+/*    margin-top: 100px;*/
     list-style: none;
     color: white;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+   
 }
 ul.left{
     margin-left:50px;
@@ -34,6 +34,9 @@ a {
 ul.right {
     float: right;
     margin-right: 50px;
+   
 }
-
+.container{
+    padding-top: 20px;
+}
 

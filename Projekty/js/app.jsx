@@ -31,6 +31,7 @@ class TextIntro extends React.Component {
         );
     }
 }
+                
 document.addEventListener("DOMContentLoaded", () => {
     ReactDOM.render( <
         TextIntro text = 'Choose your road...!' / > ,
