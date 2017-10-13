@@ -120,6 +120,7 @@ p.text-faded {
     }
 }
 
+
 .bg-primary {
     background-color: orange;
 }
@@ -130,11 +131,14 @@ p {
 }
 
 .explore {
+    margin-top:100px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: center;
     text-transform: capitalize;
     padding-top: 20px;
 }
+
 
 .services-wrapper {
     width: auto;
@@ -144,7 +148,8 @@ p {
 
 .service-container {
     text-align: center;
-    margin-top: 25px;
+    padding-top: 25px;
+    background-color: #999791;
 }
 
 .singleservice {

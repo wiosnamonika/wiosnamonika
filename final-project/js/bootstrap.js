@@ -39,3 +39,11 @@ $(window).load(function () {
         });
     });
 });
+
+
+var emailElem = form.elements.email;
+var nameElem = form.elements.name;
+var surnameElem = form.elements.mobile;
+var pass1Elem = form.elements.pass1;
+var pass2Elem = form.elements.pass2;
+var agreeElem = form.elements.agree;

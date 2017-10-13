@@ -5,9 +5,9 @@ import ReactDOM from 'react-dom';
 
 class TextTyper extends React.Component {
     constructor(props){
-        super(props) //props stala wlasnosc ktora przekazujemy na koniec w renderze
+        super(props) 
         this.state = {
-            text: TextTyper.text //nie przekazujemy tekstu bo wtedy przekazalibysmy na sztywno
+            text: TextTyper.text 
            
         };
        this.counter = 0;
@@ -18,7 +18,7 @@ class TextTyper extends React.Component {
           this.setState({
               text: this.props.text.slice(0,this.counter)
           
-          });  //this.props.text przechwuje nam niezmieniony text  
+          });  
             
         },500)
     }
@@ -30,13 +30,12 @@ class TextTyper extends React.Component {
         return (
         <h1>{this.state.text}</h1>
         
-        );
-    }
+        );    }
 }
 
 document.addEventListener('DOMContentLoaded', function(){
     ReactDOM.render(
-        <TextTyper text = 'Explore our services!'></TextTyper>,//wywolac
+        <TextTyper text = 'Explore our services!'></TextTyper>,
         document.getElementById('app')
     );
 });
