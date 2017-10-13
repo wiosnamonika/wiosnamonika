@@ -4,6 +4,11 @@
     vertical-align: baseline;
 }
 
+header {
+    width: 200vh;
+    height: 50vw;
+    background-color: #000000;
+}
 
 #app {
     color: gray;
