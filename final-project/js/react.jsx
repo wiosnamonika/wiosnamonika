@@ -41,4 +41,4 @@ document.addEventListener('DOMContentLoaded', function(){
     );
 });
 
-class TextTyper2
+
