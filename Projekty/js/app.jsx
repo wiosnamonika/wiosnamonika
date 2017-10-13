@@ -6,8 +6,6 @@ class TextIntro extends React.Component {
         super(props);
         this.state = {
             text: TextIntro.text,
-
-
         };
 
         this.counter = 0;
