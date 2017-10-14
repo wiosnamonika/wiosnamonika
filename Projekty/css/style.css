@@ -4,6 +4,7 @@ html {
 
 * {
     box-sizing: border-box;
+    font-family: Pacifico, open-sans;
 }
 
 #app {
@@ -48,10 +49,6 @@ a {
     text-decoration: none;
 }
 
-ul.right {
-    float: right;
-    margin-right: 5rem;
-}
 
 .container {
     padding-top: 20px;
