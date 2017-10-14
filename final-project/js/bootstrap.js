@@ -26,8 +26,6 @@ $(document).ready(function () {
 
         var errorText = '';
 
-
-
         if (nameElem.val().trim().length <= 6) {
             nameElem.addClass("box-error");
             errorText += 'Twoje imię i nazwisko jest za krótkie<br>';
@@ -60,23 +58,54 @@ $(document).ready(function () {
             });
         }
         //car api
-        var url2 = 'https://api-st.cars.com/VehicleMarketSummary/1.0/rest/reports/vehicledetails/metrics';
-        
-        $.ajax({
-                method: "GET",
+
+
+        // variables for DOM
+        var ul = $("#car-date");
+
+        var url2 = 'https://fipe.parallelum.com.br/api/v1/carros/marcas';
+        console.log(url2);
+
+        function insertCar(data) {
+
+            $.ajax({
+
+
+                method: 'GET',
                 url: url2,
-                dataType: "json",
-                data: car
             }).done(function (response) {
+                var li;
+                var span;
+                var counter = 0;
+                console.log(response);
+                for (var key in response.cars) {
+                    if (counter >= data)
+                        break;
+                    counter++;
+                    li = $("<li>", {
+                        class: "car"
+                    });
+                    span = $('<span>');
+                    span.text(response.cars[key][0].name + ' ' + response.cars[key][0].date);
+                    li.append(span);
+                    ul.append(li);
+                    //console.log(response.holidays[key][0]);
+                }
+                counter = 0;
+            }).fail(function (response) {
                 console.log(response);
             });
         }
-
-        //response api klucz wartosc
-        //for ladujesz po tablicy
+        //instertHolidays(5);
+        $("#load").on("click", function () {
+            //console.log("OK");
+            insertCar(10);
+        });
 
     });
+});
 
 
 
-}) //koniec funkcji
+
+//koniec funkcji

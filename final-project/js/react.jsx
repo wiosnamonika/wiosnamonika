@@ -30,7 +30,8 @@ class TextTyper extends React.Component {
         return (
         <h1>{this.state.text}</h1>
         
-        );    }
+        );
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function(){
