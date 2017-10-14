@@ -49,18 +49,31 @@ $(document).ready(function () {
             // json
 
             var url = "http://api.coderslab.pl/showpost.php";
-            
+
             $.ajax({
                 method: "POST",
-                url: url 
-                dataType: "json"
+                url: url,
+                dataType: "json",
+                data: car
+            }).done(function (response) {
+                console.log(response);
+            });
+        }
+        //car api
+        var url2 = 'https://api-st.cars.com/VehicleMarketSummary/1.0/rest/reports/vehicledetails/metrics';
+        
+        $.ajax({
+                method: "GET",
+                url: url2,
+                dataType: "json",
                 data: car
             }).done(function (response) {
                 console.log(response);
             });
         }
 
-
+        //response api klucz wartosc
+        //for ladujesz po tablicy
 
     });
 
