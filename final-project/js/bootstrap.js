@@ -1,4 +1,5 @@
-$(window).load(function () {
+$(document).ready(function () {
+
     var st;
     $('#carousel').on('slid.bs.carousel', function () {
         //   debugger;
@@ -8,42 +9,61 @@ $(window).load(function () {
         clearTimeout(st);
         st = setTimeout("$('#carousel').carousel()", newinterval);
 
-        // $('#carousel').carousel({ interval: newinterval });
     });
 
-    $(document).ready(function () {
+    var button = document.querySelector('#sub');
+    var form = document.querySelector('form');
+    var emailElem = $("#email");
+    var nameElem = $("#name");
 
-        $('#contact').validate({
-            rules: {
-                name: {
-                    minlength: 2,
-                    required: true
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                message: {
-                    minlength: 2,
-                    required: true
-                }
-            },
-            highlight: function (element) {
-                $(element).closest('.control-group').removeClass('success').addClass('error');
-            },
-            success: function (element) {
-                element
-                    .text('OK!').addClass('valid')
-                    .closest('.control-group').removeClass('error').addClass('success');
-            }
-        });
+
+    var errorMsg = $('.error-message');
+    var successMsg = form.querySelector('.success-message');
+
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        //form ZAWSZE JEST NA SUBMIT nie na clicku!!
+
+        var errorText = '';
+
+
+
+        if (nameElem.val().trim().length <= 6) {
+            nameElem.addClass("box-error");
+            errorText += 'Twoje imię i nazwisko jest za krótkie<br>';
+        } else {
+            nameElem.classList.remove('box-error');
+        }
+
+        if (emailElem.val().indexOf('@') == -1) {
+            emailElem.addClass('box-error');
+            errorText += 'Email musi posiadać znak @<br>';
+        } else {
+            emailElem.classList.remove('box-error'); //zabezpieczenie 
+        }
+
+        if (errorText != "") {
+            errorMsg.html(errorText);
+
+        } else {
+            // json
+
+            var url = "http://api.coderslab.pl/showpost.php";
+            
+            $.ajax({
+                method: "POST",
+                url: url 
+                dataType: "json"
+                data: car
+            }).done(function (response) {
+                console.log(response);
+            });
+        }
+
+
+
     });
-});
 
 
-var emailElem = form.elements.email;
-var nameElem = form.elements.name;
-var surnameElem = form.elements.mobile;
-var pass1Elem = form.elements.pass1;
-var pass2Elem = form.elements.pass2;
-var agreeElem = form.elements.agree;
+
+}) //koniec funkcji

@@ -9614,11 +9614,10 @@ var TextTyper = function (_React$Component) {
     function TextTyper(props) {
         _classCallCheck(this, TextTyper);
 
-        //props stala wlasnosc ktora przekazujemy na koniec w renderze
         var _this = _possibleConstructorReturn(this, (TextTyper.__proto__ || Object.getPrototypeOf(TextTyper)).call(this, props));
 
         _this.state = {
-            text: TextTyper.text //nie przekazujemy tekstu bo wtedy przekazalibysmy na sztywno
+            text: TextTyper.text
 
         };
         _this.counter = 0;
@@ -9635,7 +9634,7 @@ var TextTyper = function (_React$Component) {
                 _this2.setState({
                     text: _this2.props.text.slice(0, _this2.counter)
 
-                }); //this.props.text przechwuje nam niezmieniony text  
+                });
             }, 500);
         }
     }, {
@@ -9658,8 +9657,7 @@ var TextTyper = function (_React$Component) {
 }(_react2.default.Component);
 
 document.addEventListener('DOMContentLoaded', function () {
-    _reactDom2.default.render(_react2.default.createElement(TextTyper, { text: 'Explore our services!' }), //wywolac
-    document.getElementById('app'));
+    _reactDom2.default.render(_react2.default.createElement(TextTyper, { text: 'Explore our services!' }), document.getElementById('app'));
 });
 
 /***/ }),

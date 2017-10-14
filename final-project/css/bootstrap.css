@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 
@@ -120,7 +121,17 @@ p.text-faded {
     }
 }
 
+textarea{
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
 
+@media (max-width:700px){
+    textarea{
+        width: 90%;
+    }
+}
 .bg-primary {
     background-color: orange;
 }
@@ -130,6 +141,11 @@ p {
     margin-right: -150%;
 }
 
+#explore_menu{
+    padding-top:100px;
+    background-color: steelblue;
+    height: 400px;
+}
 .explore {
     margin-top:100px;
     margin-bottom: 70px;
@@ -137,8 +153,42 @@ p {
     justify-content: center;
     text-transform: capitalize;
     padding-top: 20px;
+    
 }
 
+ul.gallery {
+    list-style: none;
+    width: 100%;
+}
+
+.gallery li {
+    display: inline-block;
+}
+
+.gallery li img {
+    width: 30vw;
+    height: 15vw;
+    border: 0.1rem solid black;
+    padding: 1.2rem;
+}
+
+.gallery li img:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    transform: rotate(360deg);
+}
+
+#section2 {
+    margin-top: 9.7vw;
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 20%;
+    box-sizing: border-box;
+    height: 48.8vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
 
 .services-wrapper {
     width: auto;
@@ -271,6 +321,7 @@ img.serviceicon {
 
 .form-group {
     margin-top: 10px;
+    width: 45%;
 }
 
 label {
