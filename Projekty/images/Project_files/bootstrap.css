@@ -178,11 +178,6 @@ ul.gallery {
     transform: rotate(360deg);
 }
 
-#car-date {
-    display: block;
-    margin: 0 auto;
-}
-
 #section2 {
     margin-top: 9.7vw;
     width: 80%;
@@ -313,7 +308,7 @@ img.serviceicon {
 }
 
 .contact-section {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .contact-section .col-md-6 {
