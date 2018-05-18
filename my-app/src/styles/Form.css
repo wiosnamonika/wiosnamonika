@@ -1,0 +1,71 @@
+.careers-list-contact-form {
+    & { padding-top: 30px; }
+    .input-row { display: flex; flex-flow: row nowrap; justify-content: space-between; }
+    .input-row-legend { font-size: 12px; line-height: 16px; color: $color-gray-48; padding-bottom: 4px; text-align: right; }
+    .input-box {
+        & { position: relative; padding-bottom: 30px; }
+        &.input-box-50 { width: 48%; }
+        .text-label { position: absolute; top: 4px; left: 0; font-size: 12px; line-height: 16px; color: $color-gray-48; transition: all 0.25s ease; }
+        .text-input,
+        .textarea-input {
+            & { box-sizing: border-box; width: 100%; height: 25px; font-size: 12px; line-height: 20px; padding: 5px 0; border: 0; border-bottom: 1px solid $color-gray-e0; margin: 0; -webkit-appearance: none; border-radius: 0; }
+            &:focus { border-color: $color-gray-a1; }
+            &.not-empty { border-color: $color-blue; }
+            &.error { border-color: $color-red; }
+            &.not-empty ~ .text-label,
+            &:focus ~ .text-label { font-size: 13px; color: $color-blue; transform: translate(0, -16px); }
+        }
+        .textarea-input { resize: none; }
+    }
+    .input-checkbox {
+        & { padding-bottom: 30px; }
+        .checkbox-input { display: none; }
+        .checkbox-label {
+            & { display: block; padding-left: 40px; font-size: 11px; line-height: 12px; min-height: 24px; color: $color-gray-48; position: relative; display: flex; flex-flow: column nowrap; justify-content: center; }
+            &:before { content: ''; position: absolute; top: 0; left: 0; width: 24px; height: 24px; box-sizing: border-box; border: 1px solid $color-gray-a1; background: $color-white; border-radius: 4px; }
+            &:after { content: ''; position: absolute; top: 6px; left: 6px; width: 12px; height: 12px; border-radius: 2px; background-color: $color-gray-a1; transform: scale(0); transition: transform 0.25s ease; }
+            &.error {
+                & { color: $color-red; }
+                &:before { border-color: $color-red; }
+            }
+        }
+        .checkbox-input:checked + .checkbox-label:after { transform: scale(1); }
+    }
+    .input-box-file {
+        & { position: relative; padding-bottom: 0; width: 48%; padding-bottom: 30px; }
+        .file-label {
+            & { display: block; background: $color-white; border: 1px solid $color-blue; font-size: 14px; line-height: 20px; padding: 5px 0; text-align: center; color: $color-blue; transition: backgorund 0.25s ease, color 0.25s ease; }
+            &:hover { color: $color-white; background: $color-blue; }
+        }
+        .file-input { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
+        .file-selected { padding-right: 16px; height: 16px; line-height: 16px; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; position: relative; }
+        .file-selected-remove {
+            & { position: absolute; top: 0; right: 0; width: 16px; height: 16px; cursor: pointer; }
+            &:before,
+            &:after { content: ''; position: absolute; left: 2px; width: 12px; top: 7px; height: 2px; background: $color-black; transition: background 0.25s ease; }
+            &:before { transform: rotate(45deg); }
+            &:after { transform: rotate(-45deg); }
+            &:hover {
+                &:before,
+                &:after { background: $color-blue; }
+            }
+        }
+        .file-error { line-height: 16px; font-size: 10px; color: $color-red; }
+    }
+    .button-box { text-align: center; }
+    .form-message {
+        & { font-size: 14px; line-height: 20px; color: $color-green; margin: 20px 0 0 0; text-align: center; }
+        &.error { color: $color-red; }
+    }
+}
+@media screen and (max-width: 767px) {
+    .careers-list-contact-form {
+        .input-row { display: block; }
+        .input-box {
+            & { padding-bottom: 20px; }
+            &.input-box-50 { width: auto; }
+        }
+        .input-box-file { width: auto; padding-bottom: 20px; }
+        .input-checkbox { padding-bottom: 20px; }
+    }
+}
