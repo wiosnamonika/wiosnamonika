@@ -68,16 +68,13 @@ class Form extends Component {
 
   render () {
 
-        if (this.state.formValid) {
-            return 'success!';
-        }
-
     return (
         <form
-            method="post"
-            action=""
-            acceptCharset="utf-8"
-            className="contact-form"
+            // method="post"
+            // action=""
+            // acceptCharset="utf-8"
+            // className="contact-form"
+            // noValidate
         >
             <h2>Sign up</h2>
             <div className="panel panel-default">
@@ -104,7 +101,7 @@ class Form extends Component {
                   value={ this.state.password }
                   onChange={ this.handleUserInput }
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-                  required
+
             />
             </div>
             <div className="checkbox-input input-row">
@@ -124,7 +121,11 @@ class Form extends Component {
                   className="login-button "
                   disabled={ !this.state.formValid }
                 >
-                    <span className="login-button-text">Log in</span>
+                {
+                    this.state.formValid ? (
+                        <span className="login-button-text">Log in</span>
+                    ) && "success" : null
+                }
                 </button>
             </div>
         </form>
