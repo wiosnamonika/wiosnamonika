@@ -16,6 +16,7 @@ class Form extends Component {
             emailValid: false,
             passwordValid: false,
             formValid: false
+
         }
 
         this.handleChangeCheckbox = this.handleChangeCheckbox.bind(this);
@@ -26,7 +27,6 @@ class Form extends Component {
     handleUserInput(e) {
         const name = e.target.name;
         const value = e.target.value;
-        const agree = e.target.checked;
         this.setState({[name]: value}, () => { this.validation(name, value) });
     }
 
@@ -73,21 +73,9 @@ class Form extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-
-        if (this.state.formValid) {
-            return;
-        }
-        // const data = new FormData();
-        // data.append('password', password.substring(0, 50));
-        // data.append('email', email.substring(0, 100));
-        // data.append('agree', agree);
-
-      // this.axios.post(`https://jsonplaceholder.typicode.com/users`, { formValid })
-      //   .then(res => {
-      //   console.log(res);
-      //   console.log(res.data);
-      // })
-      //this.axiosPromise = axios.post('/web-service-url/', { data: clientMessage });
+        this.setState({ formValid: true });
+        alert('success')
+        this.state.formValid
     }
 
     render() {
@@ -124,7 +112,7 @@ class Form extends Component {
                       placeholder="Password"
                       value={ this.state.password }
                       onChange={ this.handleUserInput }
-                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$"
 
                 />
                 </div>
@@ -145,18 +133,16 @@ class Form extends Component {
                       value="login"
                       className="login-button "
                       disabled={ !this.state.formValid }
+                      onSubmit={ this.handleSubmit }
                     >
+
                     Login
+
                     </button>
                 </div>
 
             </form>
         )
-                {
-                    if (!this.errorClass) {
-                        return null;
-                    }
-                }
     }
 }
 
