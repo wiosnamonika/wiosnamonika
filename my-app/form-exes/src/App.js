@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles/App.css';
-import Form from './Form';
-// import AuthLogin from './AuthLogin';
+import Form from './Form3';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+const App = ({ handleSuccessClick }) => (
+    <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Login page</h1>
+            <h1 className="App-title">Login page</h1>
         </header>
-        <div/>
-        <Form/>
-      </div>
-    );
-  }
-}
+        <Form onClick={ handleSuccessClick } />
+    </div>
+)
 
 export default App;

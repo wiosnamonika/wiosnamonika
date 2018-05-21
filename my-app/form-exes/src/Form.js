@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import cx from 'classnames';
 import { Errors } from './Errors';
 
 class Form extends Component {
@@ -22,6 +23,7 @@ class Form extends Component {
         this.handleChangeCheckbox = this.handleChangeCheckbox.bind(this);
         this.handleUserInput = this.handleUserInput.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSuccessClick = this.handleSuccessClick.bind(this);
     }
 
     handleUserInput(e) {
@@ -46,10 +48,12 @@ class Form extends Component {
     switch(fieldName) {
         case 'email':
             emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+            // emailValid = value.match("test@test") && (/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
             validationErrors.email = emailValid ? '' : ' is invalid';
         break;
         case 'password':
             passwordValid = value.length >= 6;
+            // passwordValid = value.match("Password1") && value.length >= 6;
             validationErrors.password = passwordValid ? '': ' is invalid';
         break;
         default:
@@ -57,14 +61,14 @@ class Form extends Component {
     }
     this.setState({
         errors: validationErrors,
-        emailValid: emailValid,
-        passwordValid: passwordValid
+        emailValid,
+        passwordValid
     },
     this.validateForm);
     }
 
     validateForm() {
-        this.setState({formValid: this.state.emailValid && this.state.passwordValid});
+        this.setState({ formValid: this.state.emailValid && this.state.passwordValid });
     }
 
     errorClass(error) {
@@ -73,13 +77,18 @@ class Form extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
+
         this.setState({ formValid: true });
         alert('success')
-        this.state.formValid
+
+    };
+
+    handleSuccessClick(e) {
+        e.preventDefault();
+        this.setState({ formValid: !this.state.formValid });
     }
 
     render() {
-        // console.log('test');
         return (
             <form
                 onSubmit={ this.handleSubmit }
@@ -92,7 +101,7 @@ class Form extends Component {
                 <div className="panel panel-default">
                     <Errors errors={ this.state.errors } />
                 </div>
-                <div className={ `input-row ${this.errorClass(this.state.errors.email) }`}>
+                <div className={ `input-row ${ this.errorClass(this.state.errors.email) }`}>
                     <label htmlFor="email">Email address</label>
                     <input
                       type="email"
@@ -112,7 +121,7 @@ class Form extends Component {
                       placeholder="Password"
                       value={ this.state.password }
                       onChange={ this.handleUserInput }
-                      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
 
                 />
                 </div>
@@ -131,14 +140,25 @@ class Form extends Component {
                     <button
                       type="submit"
                       value="login"
-                      className="login-button "
+                      className={ cx("login-button") }
                       disabled={ !this.state.formValid }
-                      onSubmit={ this.handleSubmit }
+                      onSubmit={ this.handleSuccessClick }
                     >
-
-                    Login
-
+                        Login
+                        {
+                            !this.state.formValid ? null : (
+                                <a
+                                  href="https://i.imgur.com/2ZNjNPL.gif"
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                  className="link-hide"
+                                >
+                                    Login
+                                </a>
+                            )
+                        }
                     </button>
+
                 </div>
 
             </form>
