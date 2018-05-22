@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.css';
-import Form from './Form3';
+import Form from './Form';
 
 const App = ({ handleSuccessClick }) => (
     <div className="App">
